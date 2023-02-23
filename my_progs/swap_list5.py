@@ -1,0 +1,17 @@
+#
+# Python3 program to swap first
+# and last element of a list
+ 
+# Swap function
+
+def swapList(list):
+     first=list.pop(0)
+     last=list.pop(-1)
+
+
+     list.insert(0,last)
+     list.append(first)
+     return list
+
+list=[29, 30, 60, 78, 45]
+print(swapList(list))     
